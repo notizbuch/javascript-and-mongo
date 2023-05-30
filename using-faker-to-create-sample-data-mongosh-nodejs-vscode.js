@@ -17,3 +17,6 @@ return {
 
 console.log(faker.helpers.multiple(randomData, {count:10}))
 
+// in MongoDB for VS Code Playground:
+use('db1');
+db.getCollection('users').insertMany(faker.helpers.multiple(randomData, {count:10}))
